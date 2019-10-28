@@ -1,5 +1,5 @@
-FROM    alpine:3.2
-MAINTAINER Kyle Anderson <kwa@yelp.com>
+FROM    alpine
+MAINTAINER Anton Lundin <glance@acc.umu.es>
 
 RUN     apk add -U python py-pip
 ADD     requirements.txt /code/requirements.txt
