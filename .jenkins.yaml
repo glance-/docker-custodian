@@ -1,0 +1,11 @@
+triggers:
+    cron: "@weekly"
+
+builders:
+    - script
+    - docker
+
+script:
+    - python3.7 -m venv venv
+    - venv/bin/pip install --upgrade setuptools pip wheel tox
+    - venv/bin/tox
